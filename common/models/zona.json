@@ -1,0 +1,28 @@
+{
+  "name": "zona",
+  "plural": "zona",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_ciudad": {
+      "type": "number"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "activo": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

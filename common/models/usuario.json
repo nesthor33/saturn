@@ -1,0 +1,65 @@
+{
+  "name": "usuario",
+  "plural": "usuario",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_calle": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellido_paterno": {
+      "type": "string"
+    },
+    "apellido_materno": {
+      "type": "string"
+    },
+    "nivel_usuario": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "detalle_direccion": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "celular": {
+      "type": "string"
+    },
+    "reset_token": {
+      "type": "string"
+    },
+    "expiracion_token": {
+      "type": "string"
+    },
+    "activo": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

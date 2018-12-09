@@ -1,0 +1,51 @@
+{
+  "name": "usuario_grupo",
+  "plural": "usuario_grupo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_usuario": {
+      "type": "number",
+      "required": true
+    },
+    "id_grupo": {
+      "type": "number",
+      "required": true
+    },
+    "tipo_usuario": {
+      "type": "string",
+      "required": true
+    },
+    "pendiente": {
+      "type": "boolean",
+      "required": true
+    },
+    "activo": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "grupos": {
+      "type": "belongsTo",
+      "model": "grupo",
+      "foreignKey": "id_grupo"
+    },
+    "usuarios": {
+      "type": "belongsTo",
+      "model": "usuario",
+      "foreignKey": "id_usuario"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

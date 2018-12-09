@@ -1,0 +1,45 @@
+{
+  "name": "notificacion",
+  "plural": "notificacion",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_usuario": {
+      "type": "number",
+      "required": true
+    },
+    "mensaje": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "icono": {
+      "type": "string",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    },
+    "activo": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

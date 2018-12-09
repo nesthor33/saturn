@@ -1,0 +1,49 @@
+{
+  "name": "aviso_encuentro",
+  "plural": "aviso_encuentro",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_alerta_perdida": {
+      "type": "number",
+      "required": true
+    },
+    "id_calle": {
+      "type": "number",
+      "required": true
+    },
+    "telefono_encuentro": {
+      "type": "string"
+    },
+    "fecha_encuentro": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    },
+    "detalle_encuentro": {
+      "type": "string",
+      "required": true
+    },
+    "correcto": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "activo": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

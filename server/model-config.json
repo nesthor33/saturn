@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "ciudad": {
+    "dataSource": "db",
+    "public": true
+  },
+  "usuario": {
+    "dataSource": "db",
+    "public": true
+  },
+  "zona": {
+    "dataSource": "db",
+    "public": true
+  },
+  "calle_avenida": {
+    "dataSource": "db",
+    "public": true
+  },
+  "usuario_grupo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "grupo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "paciente": {
+    "dataSource": "db",
+    "public": true
+  },
+  "alerta_perdida": {
+    "dataSource": "db",
+    "public": true
+  },
+  "aviso_encuentro": {
+    "dataSource": "db",
+    "public": true
+  },
+  "email": {
+    "dataSource": "email"
+  },
+  "notificacion": {
+    "dataSource": "db",
+    "public": true
+  }
+}

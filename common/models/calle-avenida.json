@@ -1,0 +1,31 @@
+{
+  "name": "calle_avenida",
+  "plural": "calle_avenida",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_zona": {
+      "type": "number"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "activo": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

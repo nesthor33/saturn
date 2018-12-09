@@ -1,0 +1,72 @@
+{
+  "name": "paciente",
+  "plural": "paciente",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_grupo": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellido_paterno": {
+      "type": "string",
+      "required": true
+    },
+    "apellido_materno": {
+      "type": "string",
+      "required": true
+    },
+    "color_ojos": {
+      "type": "string"
+    },
+    "color_cabello": {
+      "type": "string"
+    },
+    "fecha_nacimiento": {
+      "type": "date",
+      "required": true
+    },
+    "estatura": {
+      "type": "string"
+    },
+    "color_piel": {
+      "type": "string"
+    },
+    "genero": {
+      "type": "string"
+    },
+    "nacionalidad": {
+      "type": "string"
+    },
+    "foto": {
+      "type": "string"
+    },
+    "notas": {
+      "type": "string"
+    },
+    "rec_facial": {
+      "type": "boolean",
+      "default": false
+    },
+    "activo": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

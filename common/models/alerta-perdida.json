@@ -1,0 +1,51 @@
+{
+  "name": "alerta_perdida",
+  "plural": "alerta_perdida",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_paciente": {
+      "type": "number",
+      "required": true
+    },
+    "id_calle": {
+      "type": "number",
+      "required": true
+    },
+    "fecha_perdida": {
+      "type": "date",
+      "required": true
+    },
+    "caracteristicas_paciente": {
+      "type": "string",
+      "required": true
+    },
+    "resuelto": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "activo": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "patients": {
+      "type": "belongsTo",
+      "model": "paciente",
+      "foreignKey": "id_paciente"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

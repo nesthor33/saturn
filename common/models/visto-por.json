@@ -1,0 +1,32 @@
+{
+  "name": "visto_por",
+  "plural": "visto_por",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_notificacion": {
+      "type": "number",
+      "required": true
+    },
+    "id_usuario": {
+      "type": "number",
+      "required": true
+    },
+    "activo": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "grupo",
+  "plural": "grupo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "activo": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "usuario_grupos_pendientes": {
+      "type": "hasMany",
+      "model": "usuario_grupo",
+      "foreignKey": "id_grupo"
+    },
+    "usuario_grupos": {
+      "type": "hasMany",
+      "model": "usuario_grupo",
+      "foreignKey": "id_grupo"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

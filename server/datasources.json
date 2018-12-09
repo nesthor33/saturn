@@ -1,0 +1,27 @@
+{
+  "db": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "database": "db_alz",
+    "password": "nesthor",
+    "name": "db",
+    "user": "postgres",
+    "connector": "postgresql"
+  },
+  "email": {
+    "name": "email",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "proyectoalzheimer451@gmail.com",
+          "pass": "alz123proy456"
+        }
+      }
+    ]
+  }
+}
